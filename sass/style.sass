@@ -1,4 +1,5 @@
 @import "vars"
+@import "single_page_style"
 
 *
   margin: 0
@@ -50,6 +51,7 @@ a
 .browse_button_link
   color: #222222
   font-size: 14px
+  line-height: 32px
   font-weight: 300
   letter-spacing: 0.35px
   border-radius: 3px 0 0 3px
@@ -60,7 +62,8 @@ a
 
 .browse_input_text
   color: #a4a4a4
-  font-size: 13px
+  font-size: 14px
+  line-height: 18px
   font-weight: 300
   letter-spacing: 0.35px
   border: none
@@ -72,6 +75,7 @@ a
 .browse_search_link
   color: #a4a4a4
   font-size: 14px
+  line-height: 32px
   font-weight: 400
   letter-spacing: 0.35px
   padding: 14px
@@ -103,6 +107,10 @@ a
   list-style-type: none
   display: flex
   justify-content: center
+  &__list
+    position: relative
+  &__list:hover .drop
+    display: flex
 
 .menu__link
   display: block
@@ -155,13 +163,13 @@ a
   background-color: #ffffff
   margin-top: 26px
   padding: 16px 20px
-  & :first-child
+  &:first-child
     color: #222222
     font-size: 18px
     font-weight: 600
     text-transform: uppercase
     letter-spacing: 0.45px
-  & :last-child
+  &:last-child
     font-weight: 600
     text-transform: uppercase
     color: #f16d7f
@@ -247,6 +255,7 @@ a
 
 .product__img
   width: 100%
+  background-color: #f2f2f2
 
 .product
   width: 261px
@@ -415,6 +424,7 @@ a
     text-transform: uppercase
 
 .subscribe_spam
+  border-left: 1px solid #fff
   p
     letter-spacing: 0.35px
     line-height: 24px
@@ -520,7 +530,6 @@ a
     background-color: #f16d7f
     color: #f7f7f8
 
-
 .footer
   background-color: #e6e6e6
   margin-top: 89px
@@ -531,3 +540,52 @@ a
     letter-spacing: 0.4px
     line-height: 42px
 
+.drop 
+  position: absolute
+  display: none
+  border-radius: 5px
+  background-color: #ffffff
+  padding: 0 0 20px
+  border: 1px solid #ececec
+  top: 48px
+  &__flex
+    width: 235px
+    margin-right: 20px
+    margin-left: 20px
+    
+  &__h3
+    border-bottom: 1px solid #e8e8e8
+    color: #232323
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    padding-bottom: 8px
+    margin-bottom: 8px
+    margin-top: 20px
+    letter-spacing: 0.35px
+  &__ul
+    list-style-type: none
+  &__link
+    color: #646464
+    font-size: 14px
+    font-weight: 400
+    line-height: 28px
+    letter-spacing: 0.35px
+  & :before
+    content: ''
+    width: 12px
+    height: 12px
+    background-color: #fff
+    display: block
+    position: absolute
+    left: 29px
+    top: -8px
+    transform: rotate(45deg)
+    border-top: 1px solid #e8e8e8
+    border-left: 1px solid #e8e8e8
+
+.drop_last 
+  right: 0
+  & :before
+    right: 50px
+    left: auto !important
