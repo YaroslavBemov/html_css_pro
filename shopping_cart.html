@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Single Page</title>
+    <title>Shopping cart</title>
     <script src="https://kit.fontawesome.com/a081fe1586.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700i,900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -11,7 +11,8 @@
 <header class="header">
     <div class="container header__content">
         <div class="header__left">
-            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN<span>D</span> </a>
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN<span>D</span>
+            </a>
             <div class="header__form" action="#">
                 <div class="browse_button"><a class="browse_button_link" href="#">Browse <i
                         class="fas fa-sort-down"></i></a></div>
@@ -245,104 +246,33 @@
         </div>
     </div>
 </nav>
-<div class="img-slider">
-    <div class="img-slider__content">
-        <a href="#" class="img-slider__link img-slider__link_left"><i class="fas fa-chevron-left"></i></a>
-        <div class="img-slider__block">
-            <img src="img/img-slider_img_1.jpg" alt="Slider image" class="img-slider__image">
+<div class="cart">
+    <div class="cart__content container">
+        <div class="cart__header">
+            <span class="cart__span">Product Details</span>
+            <span class="cart__span">unite Price</span>
+            <span class="cart__span">Quantity</span>
+            <span class="cart__span">shipping</span>
+            <span class="cart__span">Subtotal</span>
+            <span class="cart__span">ACTION</span>
         </div>
-        <a href="#" class="img-slider__link img-slider__link_right"><i class="fas fa-chevron-right"></i></a>
+        <div class="cart__product">
+            <div class="cart__left">
+                <img src="img/cart-prod-1.jpg" alt="cart-prod" class="cart__prod-img">
+                <p class="cart__prod-name">Mango  People  T-shirt</p>
+                <p class="cart__prod-color">Color:   Red</p>
+                <p class="cart__prod-size">Size:   Xll	</p>
+            </div>
+            <div class="cart__right">
+                <span class="cart__prod-price cart__prod-span">$150</span>
+                <span class="cart__prod-quantity cart__prod-span"><input type="text" placeholder="2"></span>
+                <span class="cart__prod-shipping cart__prod-span">FREE</span>
+                <span class="cart__prod-subtotal cart__prod-span">$300</span>
+                <span class="cart__prod-action cart__prod-span"><i class="fa fa-times-circle"></i></span>
+            </div>
+        </div>
     </div>
 </div>
-<section class="prod-desc">
-    <div class="prod-desc__content container">
-        <div class="prod-desc__inner-container">
-            <h4 class="prod-desc__h4">WOMEN COLLECTION</h4>
-            <h3 class="prod-desc__h3">Moschino Cheap And Chic</h3>
-            <p class="prod-desc__p">Compellingly actualize fully researched processes before proactive outsourcing.
-                Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
-                parallel core competencies rather than exceptional portals. </p>
-            <div class="prod-desc__param">
-                <span class="prod-desc__span-out">MATERIAL:<span class="prod-desc__span-in"> COTTON</span></span>
-                <span class="prod-desc__span-out">DESIGNER:<span class="prod-desc__span-in"> BINBURHAN</span></span>
-            </div>
-            <a href="#" class="prod-desc__price">$561</a>
-            <div class="prod-desc__choose">
-                <div class="prod-desc__box">
-                    <span class="prod-desc__select-span">CHOOSE COLOR</span>
-                    <label for="choose-color"><select class="prod-desc__select" name="select-color" id="choose-color"></label>
-                    <option value="Green">Green</option>
-                    <option selected value="Red">Red</option>
-                    <option value="Blue">Blue</option>
-                    </select>
-                </div>
-                <div class="prod-desc__box">
-                    <span class="prod-desc__select-span">CHOOSE SIZE</span>
-                    <label for="choose-size"><select class="prod-desc__select" name="select-size" id="choose-size"></label>
-                    <option value="S">S</option>
-                    <option selected value="M">M</option>
-                    <option value="L">L</option>
-                    <option value="XL">XL</option>
-                    <option value="XXL">XXL</option>
-                    </select>
-                </div>
-                <div class="prod-desc__box">
-                    <span class="prod-desc__select-span">QUANTITY</span>
-                    <label for="quantuty"><input class="prod-desc__input" type="text" placeholder="2" id="quantuty"></label>
-                </div>
-            </div>
-            <div class="prod-desc__button">
-                <a href="" class="prod-desc__button-link"><img class="prod-desc__img" src="img/cart-red.svg" alt="cart">Add to
-                    Cart</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="ymla product-box container">
-    <div class="product-box-text container">
-        <h4 class="product-box-h4 ymla__h4">you may like also</h4>
-    </div>
-    <article class="product">
-        <a href="#">
-            <img class="product__img" src="img/prod_1_4_1.jpg" alt="photo product">
-        </a>
-        <div class="product__content">
-            <a class="product__name">BLAZE LEGGINGS</a>
-            <p class="product__price">$52.00</p>
-        </div>
-        <a href="#" class="product__add">Add to Cart</a>
-    </article>
-    <article class="product">
-        <a href="#">
-            <img class="product__img" src="img/prod_1_4_1.jpg" alt="photo product">
-        </a>
-        <div class="product__content">
-            <a class="product__name">ALEXA SWEATER</a>
-            <p class="product__price">$52.00</p>
-        </div>
-        <a href="#" class="product__add">Add to Cart</a>
-    </article>
-    <article class="product">
-        <a href="#">
-            <img class="product__img" src="img/prod_1_4_1.jpg" alt="photo product">
-        </a>
-        <div class="product__content">
-            <a class="product__name">AGNES TOP</a>
-            <p class="product__price">$52.00</p>
-        </div>
-        <a href="#" class="product__add">Add to Cart</a>
-    </article>
-    <article class="product">
-        <a href="#">
-            <img class="product__img" src="img/prod_1_4_1.jpg" alt="photo product">
-        </a>
-        <div class="product__content">
-            <a class="product__name">SYLVA SWEATER</a>
-            <p class="product__price">$52.00</p>
-        </div>
-        <a href="#" class="product__add">Add to Cart</a>
-    </article>
-</section>
 <div class="subscribe_container container">
     <div class="subscribe_slider">
         <div class="subscribe_img">
