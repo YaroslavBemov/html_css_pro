@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shopping cart</title>
+    <title>Product</title>
     <script src="https://kit.fontawesome.com/a081fe1586.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700i,900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -246,85 +246,74 @@
         </div>
     </div>
 </nav>
-<div class="cart">
-    <div class="cart__content container">
-        <div class="cart__header">
-            <span class="cart__span">Product Details</span>
-            <span class="cart__span">unite Price</span>
-            <span class="cart__span">Quantity</span>
-            <span class="cart__span">shipping</span>
-            <span class="cart__span">Subtotal</span>
-            <span class="cart__span">ACTION</span>
-        </div>
-        <div class="cart__product">
-            <div class="cart__left">
-                <img src="img/cart-prod-1.jpg" alt="cart-prod" class="cart__prod-img">
-                <p class="cart__prod-name">Mango People T-shirt</p>
-                <p class="cart__prod-color">Color: <span>Red</span></p>
-                <p class="cart__prod-size">Size: <span>Xll</span></p>
+<div class="product-box">
+    <div class="product-box__content container">
+        <div class="product-box__sidebar">
+            <div class="product-box__category">
+                <a class="product-box__category-link product-box__category-link_active" href="#">
+                    <span class="product-box__span">Category</span>
+                    <span class="product-box__span">></span>
+                </a>
+                <ul class="product-box__menu">
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Accessories</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Bags</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Denim</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Hoodies & Sweatshirts</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Jackets & Coats</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Pants</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Polos</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Shirts</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Shoes</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Shorts</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Sweaters & Knits</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">T-Shirts</a></li>
+                    <li class="product-box__list"><a class="product-box__list-link" href="#">Tanks</a></li>
+                </ul>
             </div>
-            <div class="cart__right">
-                <span class="cart__prod-price cart__prod-span">$150</span>
-                <span class="cart__prod-quantity cart__prod-span"><input type="text" placeholder="2"></span>
-                <span class="cart__prod-shipping cart__prod-span">FREE</span>
-                <span class="cart__prod-subtotal cart__prod-span">$300</span>
-                <span class="cart__prod-action cart__prod-span"><i class="fa fa-times-circle"></i></span>
+            <div class="product-box__category">
+                <a class="product-box__category-link" href="#">
+                    <span class="product-box__span">BRAND</span>
+                    <span class="product-box__span">></span>
+                </a>
             </div>
-        </div>
-        <div class="cart__product">
-            <div class="cart__left">
-                <img src="img/cart-prod-1.jpg" alt="cart-prod" class="cart__prod-img">
-                <p class="cart__prod-name">Mango People T-shirt</p>
-                <p class="cart__prod-color">Color: <span>Red</span></p>
-                <p class="cart__prod-size">Size: <span>Xll</span></p>
-            </div>
-            <div class="cart__right">
-                <span class="cart__prod-price cart__prod-span">$150</span>
-                <span class="cart__prod-quantity cart__prod-span"><input type="text" placeholder="2"></span>
-                <span class="cart__prod-shipping cart__prod-span">FREE</span>
-                <span class="cart__prod-subtotal cart__prod-span">$300</span>
-                <span class="cart__prod-action cart__prod-span"><i class="fa fa-times-circle"></i></span>
+            <div class="product-box__category">
+                <a class="product-box__category-link" href="#">
+                    <span class="product-box__span">dESIGNER</span>
+                    <span class="product-box__span">></span>
+                </a>
             </div>
         </div>
-        <div class="cart__product">
-            <div class="cart__left">
-                <img src="img/cart-prod-1.jpg" alt="cart-prod" class="cart__prod-img">
-                <p class="cart__prod-name">Mango People T-shirt</p>
-                <p class="cart__prod-color">Color: <span>Red</span></p>
-                <p class="cart__prod-size">Size: <span>Xll</span></p>
-            </div>
-            <div class="cart__right">
-                <span class="cart__prod-price cart__prod-span">$150</span>
-                <span class="cart__prod-quantity cart__prod-span"><input type="text" placeholder="2"></span>
-                <span class="cart__prod-shipping cart__prod-span">FREE</span>
-                <span class="cart__prod-subtotal cart__prod-span">$300</span>
-                <span class="cart__prod-action cart__prod-span"><i class="fa fa-times-circle"></i></span>
-            </div>
+        <div class="product-box__top-filter"></div>
+        <div class="product-box__product"></div>
+        <div class="product-box__pagination"></div>
+    </div>
+</div>
+<div class="feature-box">
+    <div class="feature-box__content container">
+        <div class="feature-box__feature">
+            <a href="#" class="feature-box__link">
+                <img src="img/feature_box_img_1.png" alt="feature image" class="feature-box__image">
+            </a>
+            <h3 class="feature-box__h3">Free Delivery</h3>
+            <p class="feature-box__p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                extensive models.</p>
         </div>
-        <div class="cart__button-box">
-            <div class="cart__button"><a href="#" class="cart__button-link cart__button-link_big">cLEAR SHOPPING CART</a></div>
-            <div class="cart__button"><a href="#" class="cart__button-link cart__button-link_big">cONTINUE sHOPPING</a></div>
+        <div class="feature-box__feature">
+            <a href="#" class="feature-box__link">
+                <img src="img/feature_box_img_2.png" alt="feature image" class="feature-box__image">
+            </a>
+            <h3 class="feature-box__h3">Sales & discounts</h3>
+            <p class="feature-box__p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                extensive models.</p>
         </div>
-        <div class="cart__total">
-            <div class="cart__adress">
-                <h3 class="cart__h3">Shipping Adress</h3>
-                <input type="text" class="cart__input" placeholder="Bangladesh">
-                <input type="text" class="cart__input" placeholder="State">
-                <input type="text" class="cart__input" placeholder="Postcode / Zip">
-            </div>
-            <div class="cart__discount">
-                <h3 class="cart__h3">coupon discount</h3>
-                <p class="cart__p">Enter your coupon code if you have one</p>
-                <input type="text" class="cart__input" placeholder="State">
-                <div class="cart__button"><a href="#" class="cart__button-link cart__button-link_small">Apply coupon</a></div>
-            </div>
-            <div class="cart__checkout">
-                <p class="cart__sub-total-p">Sub total<span class="cart__sub-total-span">$900</span></p>
-                <p class="cart__grand-total-p">GRAND TOTAL<span class="cart__grand-total-span">$900</span></p>
-                <div class="cart__button cart__button-checkout"><a href="#" class="cart__button-link cart__button-link_big cart__button-link_red">proceed to checkout</a></div>
-            </div>
+        <div class="feature-box__feature">
+            <a href="#" class="feature-box__link">
+                <img src="img/feature_box_img_3.png" alt="feature image" class="feature-box__image">
+            </a>
+            <h3 class="feature-box__h3">Quality assurance</h3>
+            <p class="feature-box__p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                extensive models.</p>
         </div>
-        <div class="cart__button"><a href="#" class="cart__button-link cart__button-link_small">get a quote</a></div>
     </div>
 </div>
 <div class="subscribe_container container">
