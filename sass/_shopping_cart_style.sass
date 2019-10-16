@@ -1,5 +1,9 @@
 .cart
   &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 90px 0 20px 0
   &__span
     color: #222222
     font-size: 13px
@@ -7,10 +11,124 @@
     line-height: 20px
     text-transform: uppercase
     letter-spacing: -0.2px
+    &:first-child
+      margin-right: 400px
   &__product
     display: flex
     justify-content: space-between
     align-items: center
+    border-top: 1px solid #eaeaea
+    padding: 25px 0
+    &:last-child
+      border-bottom: 1px solid #eaeaea
+  &__prod-name
+    color: #222222
+    font-size: 13px
+    font-weight: 700
+    text-transform: uppercase
+    padding: 30px 0
+  &__prod-color
+    color: #575757
+    font-size: 13px
+    font-weight: 700
+    line-height: 20px
+    & span
+      color: #6f6e6e
+      font-weight: 400
+  &__prod-size
+    color: #575757
+    font-size: 13px
+    font-weight: 700
+    line-height: 20px
+    & span
+      color: #6f6e6e
+      font-weight: 400
+  &__left
+    width: 500px
   &__prod-span
-
-
+    color: #656565
+  &__prod-img
+    float: left
+    margin-right: 21px
+  &__right
+    & input
+      width: 50px
+      text-align: center
+      line-height: 20px
+  &__prod-quantity
+    width: 54px
+  &__prod-action
+    color: #c0c0c0
+  &__prod-span
+    &:not(:first-child)
+      margin-left: 85px
+    &:last-child
+      margin-right: 10px
+  &__button-box
+    display: flex
+    justify-content: space-between
+    margin: 44px 0 63px 0
+  &__button-link
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    border: 1px solid #eaeaea
+    &_big
+      padding: 20px 38px
+    &_small
+      padding: 12px 17px
+      font-size: 11px
+    &_red
+      color: #ffffff
+      background-color: #f16d7f
+  &__total
+    display: flex
+    justify-content: space-between
+    padding-top: 23px
+  &__input
+    display: block
+    width: 355px
+    height: 45px
+    margin: 20px 0
+    padding-left: 18px
+    border: 1px solid #eaeaea
+    color: #b1b1b1
+  &__h3
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+  &__p
+    color: #000000
+    font-size: 14px
+    font-weight: 300
+    margin: 28px 0
+  &__checkout
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    background-color: #f5f3f3
+    padding: 0 45px
+  &__button-checkout
+    margin: 45px 0
+  &__sub-total-p
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: right
+  &__sub-total-span
+    margin-left: 20px
+  &__grand-total-p
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: right
+    border-bottom: 1px solid #e2e2e2
+    padding-bottom: 22px
+    padding-top: 14px
+  &__grand-total-span
+    margin-left: 20px
+    color: #f16d7f
